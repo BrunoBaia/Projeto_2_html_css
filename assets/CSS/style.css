@@ -71,6 +71,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
     width: 100%;
     border-bottom: 0.1rem solid var(--light_gray_color);
 }
@@ -126,13 +127,15 @@ a {
 }
 
 .intro_content {
+    position: relative;
+    top: -6rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
     height: 100vh;
 }
 
-.intro_text_content {
+.intro_text_content, .intro_img {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -140,5 +143,10 @@ a {
 
 .intro_text_content h2 {
     margin-bottom: 4rem;
-    line-height: 1.1;
+    line-height: 1.2;
+}
+
+.intro_img img{
+    max-width: 100%;
+    height: auto;
 }
