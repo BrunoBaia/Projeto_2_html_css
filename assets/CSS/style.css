@@ -91,10 +91,6 @@ p {
     padding-bottom: 0;
 }
 
-.menu_spacing {
-    height: 6.5rem;
-}
-
 .menu h1 {
     font-size: 2.3rem;
     color: var(--primary_color);
@@ -131,6 +127,10 @@ p {
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+}
+
+.intro_spacing {
+    height: 6.7rem;
 }
 
 .intro_content {
