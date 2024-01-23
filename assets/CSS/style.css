@@ -13,6 +13,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -39,6 +40,8 @@ h1 {
 h2 {
     font-size: 4rem;
     text-transform: uppercase;
+    margin-bottom: 4rem;
+    line-height: 1.2;
 }
 
 .main_bg {
@@ -64,6 +67,10 @@ h2 {
 
 a {
     text-decoration: none;
+}
+
+p {
+    margin-bottom: 3rem;
 }
 
 .menu {
@@ -128,25 +135,30 @@ a {
 
 .intro_content {
     position: relative;
-    top: -6rem;
+    top: -5rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
     height: 100vh;
 }
 
-.intro_text_content, .intro_img {
+.intro_text_content,
+.intro_img {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
 
-.intro_text_content h2 {
-    margin-bottom: 4rem;
-    line-height: 1.2;
-}
-
-.intro_img img{
+.intro_img img {
     max-width: 100%;
     height: auto;
+}
+
+.top_3_content {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
 }
