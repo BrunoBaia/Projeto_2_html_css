@@ -162,3 +162,42 @@ p {
     text-align: center;
     height: 100vh;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid_counter;
+}
+
+.grid_one_content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.grid_main_heading {
+    margin-bottom: 1rem;
+}
+
+.grid_descriptions {
+    padding-bottom: 5rem;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding: 0 0 2rem 5rem;
+}
+
+.grid h3::before {
+    counter-increment: grid_counter;
+    content: counter(grid_counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+}
