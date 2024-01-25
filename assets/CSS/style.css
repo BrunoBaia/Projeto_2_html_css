@@ -61,9 +61,9 @@ h2 {
     padding: var(--gap);
 }
 
-.section {
+/* .section {
     height: 100vh;
-}
+} */
 
 a {
     text-decoration: none;
@@ -135,7 +135,6 @@ p {
 
 .intro_content {
     position: relative;
-    top: -5rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -217,13 +216,10 @@ p {
     transform: translate(3%, 3%) scale(1.2) rotate(5deg);
 }
 
-.gallery_spacing {
-    height: 12rem;
-}
-
 .responsive_table {
     overflow: hidden;
     overflow-x: auto;
+    margin-bottom: 5rem;
 }
 
 table {
@@ -247,4 +243,19 @@ table td, table th {
 
 tfoot td, table th {
     background: var(--light_gray_color);
+}
+
+.contact_form {
+    grid-column: span 2;
+}
+
+.contact_form .form_grid {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+}
+
+.form_group {
+    .
 }
