@@ -139,7 +139,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro_text_content,
@@ -157,7 +157,7 @@ p {
 .top_3_content {
     max-width: 64rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     text-align: center;
     height: 100vh;
@@ -174,7 +174,7 @@ p {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid_main_heading {
@@ -200,4 +200,19 @@ p {
     top: -4rem;
     left: -2rem;
     transform: rotate(5deg);
+}
+
+.gallery_img {
+    width: 100%;
+    max-width: 24rem;
+    max-height: 24rem;
+    overflow: hidden;
+}
+
+.gallery_img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery_img img:hover {
+    transform: translate(3%, 3%) scale(1.2) rotate(5deg);
 }
