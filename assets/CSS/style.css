@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -201,6 +202,10 @@ p {
     transform: rotate(5deg);
 }
 
+.gallery .grid_one_content{
+    padding-top: 8rem;
+}
+
 .gallery_img {
     width: 100%;
     max-width: 36rem;
@@ -217,9 +222,12 @@ p {
 }
 
 .responsive_table {
-    overflow: hidden;
     overflow-x: auto;
     margin-bottom: 5rem;
+}
+
+.table {
+    padding-top: 8rem;
 }
 
 table {
@@ -234,14 +242,16 @@ table caption {
     margin-bottom: 1rem;
 }
 
-table td, table th {
+table td,
+table th {
     white-space: nowrap;
-    padding: 1rem;
+    padding: 0.8rem;
     text-align: left;
     border: 0.1rem solid var(--light_gray_color);
 }
 
-tfoot td, table th {
+tfoot td,
+table th {
     background: var(--light_gray_color);
 }
 
@@ -256,6 +266,75 @@ tfoot td, table th {
     gap: var(--gap);
 }
 
+.form_grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
 .form_group {
-    .
+    flex: 1 1 32rem;
+}
+
+.form_group label {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.form_group input,
+.form_group textarea {
+    border: none;
+    background: var(--white_color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+}
+
+.form_group input:focus,
+.form_group textarea:focus {
+    box-shadow: 0 0 1.5rem var(--secondary_color);
+}
+
+.full_width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form {
+    padding-top: 5rem;
+}
+
+.form_group button {
+    border: 0.5rem solid var(--white_color);
+    background: none;
+    color: var(--white_color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form_group button:hover {
+    background: var(--white_color);
+    color: var(--primary_color);
+}
+
+.form_group ::placeholder {
+    color: var(--light_gray_color);
+}
+
+.footer {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.footer a {
+    color: var(--primary_color);
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
 }
