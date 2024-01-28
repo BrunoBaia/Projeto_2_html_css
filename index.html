@@ -9,11 +9,14 @@
 </head>
 
 <body>
+    <input id="close_menu" class="close_menu" type="checkbox" aria-label="Close menu" aria-pressed="true" role="button">
+    <label class="close_menu_label" for="close_menu" title="close_menu"></label>
+
     <aside class="menu white_bg">
         <div class="main_content menu_content">
             <h1>LOGO</h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close_menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#top_3">top 3</a></li>
                     <li><a href="#grid_one">Grid one</a></li>
@@ -238,6 +241,8 @@
         <p>Feito com carinho por <a rel="nofollow" target="_blank" href="https://github.com/BrunoBaia">Bruno Baia</a>
         </p>
     </footer>
+
+    <a class="back_to_top" href="#">&#10148;</a>
 </body>
 
 </html>
