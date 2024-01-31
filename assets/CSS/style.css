@@ -406,7 +406,7 @@ table th {
         font-size: 3rem;
         width: 3rem;
         height: 3rem;
-        line-height: 2rem;
+        line-height: 2.5rem;
         text-align: center;
         padding: 0.5rem;
         cursor: pointer;
@@ -422,5 +422,9 @@ table th {
 
     .intro_spacing {
         height: 0;
+    }
+
+    .contact_form {
+        grid-column: auto;
     }
 }
